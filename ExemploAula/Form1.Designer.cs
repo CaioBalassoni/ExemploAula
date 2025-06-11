@@ -30,6 +30,7 @@
         {
             lblLogin = new Label();
             lblUsuario = new Label();
+            lblSenha = new Label();
             SuspendLayout();
             // 
             // lblLogin
@@ -52,11 +53,22 @@
             lblUsuario.TabIndex = 1;
             lblUsuario.Text = "Usuário:";
             // 
+            // lblSenha
+            // 
+            lblSenha.AutoSize = true;
+            lblSenha.Font = new Font("Comic Sans MS", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblSenha.Location = new Point(140, 171);
+            lblSenha.Name = "lblSenha";
+            lblSenha.Size = new Size(114, 40);
+            lblSenha.TabIndex = 2;
+            lblSenha.Text = "Senha:";
+            // 
             // frmLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblSenha);
             Controls.Add(lblUsuario);
             Controls.Add(lblLogin);
             Name = "frmLogin";
@@ -69,5 +81,6 @@
 
         private Label lblLogin;
         private Label lblUsuario;
+        private Label lblSenha;
     }
 }
