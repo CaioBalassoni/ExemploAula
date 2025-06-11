@@ -16,5 +16,12 @@ namespace ExemploAula
         {
             InitializeComponent();
         }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Form1 login = new Form1();
+            Hide();
+            login.Show();
+        }
     }
 }

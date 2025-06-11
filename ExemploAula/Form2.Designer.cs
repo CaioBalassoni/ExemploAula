@@ -30,6 +30,7 @@
         {
             lblBemVindo = new Label();
             lblMenu = new Label();
+            btnLogout = new Button();
             SuspendLayout();
             // 
             // lblBemVindo
@@ -52,11 +53,22 @@
             lblMenu.TabIndex = 1;
             lblMenu.Text = "MENU";
             // 
+            // btnLogout
+            // 
+            btnLogout.Location = new Point(713, 415);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(75, 23);
+            btnLogout.TabIndex = 2;
+            btnLogout.Text = "Logout";
+            btnLogout.UseVisualStyleBackColor = true;
+            btnLogout.Click += btnLogout_Click;
+            // 
             // frmMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnLogout);
             Controls.Add(lblMenu);
             Controls.Add(lblBemVindo);
             Name = "frmMenu";
@@ -69,5 +81,6 @@
 
         private Label lblBemVindo;
         private Label lblMenu;
+        private Button btnLogout;
     }
 }
